@@ -2,7 +2,7 @@
 
 Virtual muhit yaratish
 '''python
-python -m venv venv
+  python -m venv venv
 '''
 
 Virtual muhitni faollashtirish
