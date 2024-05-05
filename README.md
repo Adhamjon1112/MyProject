@@ -1,4 +1,4 @@
-# Ushbu loyihani ishlatmoqchi bo`lgan odam uchun komandalar
+# Ushbu loyihani ishga tushurmoqchi bo`lgan odam uchun komandalar
 
 Virtual muhit yaratish
 ```python
