@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<body class="bg-gray-100">
+    <div class="container mx-auto px-4 py-8">
+        <h2 class="text-3xl font-bold mb-4">Notes</h2>
+        <p class="mb-4">Owner: {{ owner }}</p>
+        <ul>
+            {% for note in notes %}
+                <li class="bg-white shadow-md rounded-lg p-4 mb-4">
+                    <a href="{% url 'note_detail' note.id %}" class="text-blue-500 hover:underline">{{ note.title }}</a>
+                </li>
+            {% endfor %}
+        </ul>
+        <a href="{% url 'note_create' %}" class="bg-blue-500 text-white px-4 py-2 rounded mt-4 inline-block">Add Note</a>
+    </div>
+</body>
+{% endblock content %}
